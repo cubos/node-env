@@ -8,8 +8,10 @@ const something = process.env.SOMETHING; // string | undefined
 if (!something) {
   throw new Error("You must define 'SOMETHING'");
 }
+```
 
-import { env } from "@cubos/env";
+```typescript
+import env from "@cubos/env";
 
 const something = env.SOMETHING; // string
 // It will throw if the var is not defined.
