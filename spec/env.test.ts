@@ -1,4 +1,4 @@
-import env from "../src";
+import env from "../src/index.js";
 
 describe("env", () => {
   beforeAll(() => {
