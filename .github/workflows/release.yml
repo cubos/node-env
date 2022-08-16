@@ -12,13 +12,13 @@ jobs:
           node-version: 16
           registry-url: https://registry.npmjs.org
       - run: npm install
+      - run: npm run build
       - run: |
           npm install -g json && json -I -f package.json -e '
             this.version = "${{ github.ref }}".replace("refs/tags/", "");
             this.exports = "./dist/src/index.js";
             this.types = "dist/src/index.d.ts";
           '
-      - run: npm run build
       - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
