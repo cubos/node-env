@@ -28,7 +28,7 @@
   "homepage": "https://github.com/cubos/node-env#readme",
   "devDependencies": {
     "@cubos/eslint-config": "^2.0.631875",
-    "@types/jest": "^28.1.4",
+    "@types/jest": "^29.0.0",
     "@types/node": "^18.0.0",
     "jest": "^28.1.2",
     "jest-extended": "^2.0.0",
